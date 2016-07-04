@@ -19,7 +19,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 class Pessoa extends CI_Controller {
 
-	
+	/**
+	* <p>
+	* Construtor
+	* </p>
+	*
+	*
+	* @param none
+	* @return none
+	*/
 	public function index()
 	{
 		$this->load->view('Pessoa_View');
