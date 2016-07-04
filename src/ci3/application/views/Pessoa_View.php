@@ -8,12 +8,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 - @author Igor V. Custódio <igorvc@icmc.usp.br>
 - @copyright Seção Técnica de Informática - STI / ICMC
 -->
+<?php
+$nome_pessoa = '';
+if (isset($nome) && $nome != '')
+{
+	$nome_pessoa = $nome;
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Seja bem-vindo!</title>
+	<title>Seja bem-vindo <?php echo $nome_pessoa; ?>!</title>
 
 	<style type="text/css">
 
@@ -77,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Seja bem-vindo!</h1>
+	<h1>Seja bem-vindo <?php echo $nome_pessoa; ?>!</h1>
 
 	<div id="body">
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>

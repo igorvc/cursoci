@@ -30,6 +30,7 @@ class Pessoa extends CI_Controller {
 	*/
 	public function index()
 	{
-		$this->load->view('Pessoa_View');
+		$data = array('nome' => 'Igor V. Custódio');
+		$this->load->view('Pessoa_View',$data);
 	}
 }
